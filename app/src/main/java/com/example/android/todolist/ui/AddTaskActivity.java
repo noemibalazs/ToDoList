@@ -61,6 +61,7 @@ public class AddTaskActivity extends AppCompatActivity {
         if (intent != null && intent.hasExtra(AddTaskActivity.EXTRA_TASK_ID)){
 
             button.setText(R.string.update);
+            setTitle(getString(R.string.edit_a_task));
             if (mTask == DEFAULT_ID) {
 
                 mTask = intent.getIntExtra(AddTaskActivity.EXTRA_TASK_ID, DEFAULT_ID);
@@ -75,6 +76,8 @@ public class AddTaskActivity extends AppCompatActivity {
                     }
                 });
             }
+        } else{
+            setTitle(getString(R.string.add_a_new_task));
         }
     }
 
