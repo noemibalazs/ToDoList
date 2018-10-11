@@ -14,4 +14,7 @@
     <string name="description">Description</string>
     <string name="date">10.10.2018</string>
     <string name="circle_number">1</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="show">Show</string>
 </resources>
