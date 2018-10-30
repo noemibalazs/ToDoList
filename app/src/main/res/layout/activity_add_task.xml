@@ -10,7 +10,7 @@
 
     <EditText
         android:id="@+id/task_editor"
-        android:inputType="text"
+        android:inputType="textCapWords"
         android:hint="@string/task_hint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

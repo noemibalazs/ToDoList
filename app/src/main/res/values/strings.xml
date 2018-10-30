@@ -17,4 +17,8 @@
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
     <string name="show">Show</string>
+
+    <string name="notification_channel">Primary</string>
+    <string name="notification_title">New task was inserted!!!</string>
+    <string name="notification_body">This is a reminder! A task you need to execute, not only added to your list!!!</string>
 </resources>

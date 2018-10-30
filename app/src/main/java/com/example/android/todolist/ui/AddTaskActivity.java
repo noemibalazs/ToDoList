@@ -14,6 +14,8 @@ import android.widget.RadioGroup;
 import com.example.android.todolist.R;
 import com.example.android.todolist.database.AppDatabase;
 import com.example.android.todolist.database.TaskEntity;
+import com.example.android.todolist.serv.NotificationService;
+import com.example.android.todolist.serv.ReminderTask;
 
 import java.util.Date;
 
@@ -108,6 +110,11 @@ public class AddTaskActivity extends AppCompatActivity {
 
                 if(mTask == DEFAULT_ID){
                     mdb.taskDao().insertTask(task);
+
+                    Intent intent = new Intent(AddTaskActivity.this, NotificationService.class);
+                    intent.setAction(ReminderTask.INSERT_NEW_TASK);
+                    startService(intent);
+
                 } else {
 
                     task.setId(mTask);
